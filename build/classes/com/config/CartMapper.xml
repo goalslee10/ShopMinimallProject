@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis.cart.CartMapper">
+  
+ 	<insert id = "cartAdd" parameterType="Cart">
+ 		insert into cart (num, userid, gCode, gName, gPrice, gImage, gSize, gColor, gAmount)
+ 		values(cart_seq.nextval, #{userid}, #{gCode}, #{gName}, #{gPrice}, #{gImage}, #{gSize}, #{gColor}, #{gAmount})
+ 	</insert>
+ 	
+ 	<select id = "cartList" parameterType="string" resultType="Cart">
+ 		select num, userid, gCode, gName, gPrice, gImage, gSize, gColor, gAmount
+ 		from cart
+ 		where userid = #{userid}
+ 	
+ 	</select>
+ 	
+ 	<delete id="cartDel" parameterType="int">
+     	delete from cart
+     	where num = #{num}
+    </delete>
+ 	
+ 	<delete id="cartAllDel" parameterType="arraylist">
+         delete 
+         from cart
+         <where>
+           num IN
+            <foreach item="item" index="index" collection="list"
+        			open="(" separator="," close=")">
+          		#{item}
+    		</foreach>
+         </where>
+      </delete>
+ 	
+ 	</mapper>
