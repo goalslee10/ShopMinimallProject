@@ -20,7 +20,7 @@
 * login-Top
 <img width="80%" src="https://user-images.githubusercontent.com/111646028/211194692-732512b6-047f-4ec1-acdf-334d2620f6ca.PNG"/>
 
-* product_detail
+* goodsRetrieve
 <img width="80%" src="https://user-images.githubusercontent.com/111646028/211194914-c00e4428-1bd8-4479-818f-0f2c832bd352.PNG"/>
 
 * cartlist
