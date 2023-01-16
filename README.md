@@ -5,7 +5,6 @@
 * Java 8, Mybatis v3.5.10, Jsp
 * DB : OracleDB
 * Tomcat 8.5
-* kakaoAPI
 ---
 ## Structure
 #### main.jsp -> starting point
