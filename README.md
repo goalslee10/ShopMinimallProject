@@ -4,7 +4,7 @@
 ### JDBC Shoppingmall Project
 * Java 8, Mybatis v3.5.10, Jsp
 * DB : OracleDB
-* Tomcat 9
+* Tomcat 8.5
 * kakaoAPI
 ---
 ## Structure
